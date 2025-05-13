@@ -12,7 +12,6 @@ public class Reloj : MonoBehaviour
     const string APIURL = "http://worldtimeapi.org/api/ip";
     DateTime actualtime = DateTime.Now;
    
-
     // Start is called before the first frame update
     void Start()
     {

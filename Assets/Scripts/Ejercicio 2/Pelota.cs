@@ -6,8 +6,6 @@ using UnityEngine;
 public class Pelota : MonoBehaviour
 {
     Vector3 inicio;
-    public TextMeshPro textopuntos;
-    int puntuacion = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -23,21 +21,9 @@ public class Pelota : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Room_Modern")
+        if (other.name == "Basura")
         {
             this.transform.position = inicio;
-        }
-
-        if (other.name == "Bin_Round_Brown")
-        {
-            puntuacion++;
-
-            if (puntuacion == 1)
-            {
-                textopuntos.text = (puntuacion + " Punto");
-
-            }
-            else textopuntos.text = (puntuacion + " Puntos");
         }
     }
 
