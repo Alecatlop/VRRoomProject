@@ -21,7 +21,7 @@ public class Pelota : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Basura")
+        if (other.tag == "Respawn" )
         {
             this.transform.position = inicio;
         }

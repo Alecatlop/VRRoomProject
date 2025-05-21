@@ -7,6 +7,7 @@ public class Puntuacion : MonoBehaviour
 {
     public TextMeshPro textopuntos;
     int puntuacion;
+   
 
     // Start is called before the first frame update
     void Start()
